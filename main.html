@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey&10&display=swap">
+<html>
+<head>
+    <title>Main Site</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, purple, pink);
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed
+}
+
+.navbar {
+    padding: 20px;
+    font-family: Jersey10;
+    font-size: 20px;
+}
+
+#searchsub {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .search-container {
+        text-align: center;
+    }
+
+    #brand {
+    	height: 50px;
+    	width: 50px;
+    }
+
+	#topnav{
+    	padding-left: 20px;
+    	padding-right: 40px;
+    	width: 100%;
+	}
+
+	span{
+		font-size: 120px;
+		font-family: Jersey10;
+	}
+
+	.bottom-navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bottom-navbar a {
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .bottom-navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    } 
+
+    #comment-section {
+            width: 40%;
+            margin: 0 auto;
+        }
+        #comment-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+</style>
+
+<body>
+
+ <nav class="navbar navbar-expand-md bg-default">
+        
+<a class="navbar-brand" href="index.html"><img src="https://static.vecteezy.com/system/resources/previews/021/013/584/non_2x/graduation-hat-on-transparent-background-free-png.png" id="brand"></a>
+
+<div id="topnav">
+
+        <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link" href="#1st">1st Qtr</a>
+        </li>
+        <br>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#2nd">2nd Qtr</a>
+        </li>
+        <br>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#3rd">3rd Qtr</a>
+        </li>
+        <br>
+
+        </ul>
+    </div>
+
+<div class="search-container">
+    <form>
+        <input type="search" placeholder="Search" name="search" class="searchinput">
+        <button type="submit" class="btn-primary" id="searchsub">Submit</button>
+    </form>
+</div>
+
+</nav><br><br><br>
+
+<center>
+	
+	<span>MY ONLINE PORTFOLIO</span>
+
+</center><br><br><br>
+
+<center>
+	
+	<a href="#" onclick="firstqtr()"><span id="viewQ1">1ST QUARTER</span></a>
+
+	<script type="text/javascript">
+		function firstqtr() {
+			alert("no_file.exe");
+		} /*pop up showing "no_file.exe", looking for file atm
+	</script>
+
+</center><br><br><br>
+
+<center>
+	
+	<a href="https://rtaberna.github.io/Q2-Project/" target="blank"><span id="viewQ2">2ND QUARTER</span></a>
+
+</center><br><br><br>
+
+<center>
+    
+    <a href="https://rtaberna.github.io/FV_ICT9Ruby_Q3Project_Taberna_Rocco/" target="blank"><span id="viewQ3">3RD QUARTER</span></a>
+
+</center><br><br><br>
+
+<div id="comment-section">
+    <h2>Leave a Comment</h2>
+    <form id="comment-form">
+        <textarea id="comment" placeholder="Write your comment here..."></textarea><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <div id="comments">
+    </div>
+</div>
+
+<script>
+    document.getElementById('comment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var commentInput = document.getElementById('comment').value;
+
+        document.getElementById('reset-btn').addEventListener('click', function() {
+       /*clears comments*/
+        document.getElementById('comments').innerHTML = '';
+    });
+
+</script><br><br><br>
+
+<nav class="bottom-navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</nav>
+
+</body>
+</html>
